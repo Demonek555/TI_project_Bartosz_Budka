@@ -126,6 +126,10 @@ namespace WebApplication1.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Poster")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<decimal?>("Price")
                         .HasColumnType("decimal(18,2)");
 
@@ -146,6 +150,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 1,
                             Desc = "Postapokaliptyczna walka o przetrwanie.",
                             Director = "George Miller",
+                            Poster = "Mad_Max.png",
                             Price = 29.99m,
                             Title = "Mad Max: Na drodze gniewu"
                         },
@@ -155,6 +160,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 1,
                             Desc = "Historia rzymskiego generała, który staje się gladiatorem.",
                             Director = "Ridley Scott",
+                            Poster = "Gladiator.png",
                             Price = 34.99m,
                             Title = "Gladiator"
                         },
@@ -164,6 +170,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 2,
                             Desc = "Bohater z ciętym językiem i niezwykłymi umiejętnościami.",
                             Director = "Tim Miller",
+                            Poster = "deadpool.png",
                             Price = 24.99m,
                             Title = "Deadpool"
                         },
@@ -173,6 +180,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 3,
                             Desc = "Historia człowieka, który przypadkiem wpływa na historię świata.",
                             Director = "Robert Zemeckis",
+                            Poster = "forest_gump.png",
                             Price = 19.99m,
                             Title = "Forrest Gump"
                         },
@@ -182,6 +190,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 4,
                             Desc = "Załoga statku kosmicznego walczy z obcym stworzeniem.",
                             Director = "Ridley Scott",
+                            Poster = "alien.png",
                             Price = 39.99m,
                             Title = "Obcy: Ósmy pasażer Nostromo"
                         },
@@ -191,6 +200,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 5,
                             Desc = "Rzeczywistość to iluzja kontrolowana przez maszyny.",
                             Director = "Lana i Lilly Wachowski",
+                            Poster = "matrix.png",
                             Price = 29.99m,
                             Title = "Matrix"
                         },
@@ -200,6 +210,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 6,
                             Desc = "Podróż Froda i jego towarzyszy w celu zniszczenia pierścienia.",
                             Director = "Peter Jackson",
+                            Poster = "władca.png",
                             Price = 49.99m,
                             Title = "Władca Pierścieni: Drużyna Pierścienia"
                         },
@@ -209,6 +220,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 7,
                             Desc = "Złodziej kradnie sekrety z umysłów podczas snu.",
                             Director = "Christopher Nolan",
+                            Poster = "incepcja.png",
                             Price = 34.99m,
                             Title = "Incepcja"
                         },
@@ -218,6 +230,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 8,
                             Desc = "Ogr wyrusza na misję, by odzyskać swoje bagno.",
                             Director = "Andrew Adamson, Vicky Jenson",
+                            Poster = "shrek.png",
                             Price = 14.99m,
                             Title = "Shrek"
                         },
@@ -227,6 +240,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 9,
                             Desc = "Dokument ukazujący piękno naszej planety.",
                             Director = "Richard Dale",
+                            Poster = "ziemia.png",
                             Price = 24.99m,
                             Title = "Ziemia: Niezwykły dzień"
                         },
@@ -236,6 +250,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 10,
                             Desc = "Historia miłości na pokładzie słynnego statku.",
                             Director = "James Cameron",
+                            Poster = "titanic.png",
                             Price = 19.99m,
                             Title = "Titanic"
                         },
@@ -245,6 +260,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 1,
                             Desc = "Zabójca wraca do gry, by pomścić stratę.",
                             Director = "Chad Stahelski",
+                            Poster = "john_wick.png",
                             Price = 29.99m,
                             Title = "John Wick"
                         },
@@ -254,6 +270,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 2,
                             Desc = "Dwoje przyjaciół próbuje przeżyć zwariowaną noc.",
                             Director = "Greg Mottola",
+                            Poster = "superbad.png",
                             Price = 19.99m,
                             Title = "Superbad"
                         },
@@ -263,6 +280,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 4,
                             Desc = "Rodzina ukrywa się przed potworami reagującymi na dźwięk.",
                             Director = "John Krasinski",
+                            Poster = "ciche_miejsce.png",
                             Price = 27.99m,
                             Title = "Ciche miejsce"
                         },
@@ -272,6 +290,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 5,
                             Desc = "Misja kosmiczna w poszukiwaniu nowego domu dla ludzkości.",
                             Director = "Christopher Nolan",
+                            Poster = "interseller.png",
                             Price = 39.99m,
                             Title = "Interstellar"
                         },
@@ -281,6 +300,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 6,
                             Desc = "Młody czarodziej odkrywa swoje przeznaczenie.",
                             Director = "Chris Columbus",
+                            Poster = "potter.png",
                             Price = 29.99m,
                             Title = "Harry Potter i Kamień Filozoficzny"
                         },
@@ -290,6 +310,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 3,
                             Desc = "Portret psychologiczny upadku człowieka.",
                             Director = "Todd Phillips",
+                            Poster = "joker.png",
                             Price = 31.99m,
                             Title = "Joker"
                         },
@@ -299,6 +320,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 8,
                             Desc = "Zabawki ożywają, gdy ludzie ich nie widzą.",
                             Director = "John Lasseter",
+                            Poster = "toystory.png",
                             Price = 19.99m,
                             Title = "Toy Story"
                         },
@@ -308,6 +330,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 6,
                             Desc = "Opowieść o walce między naturą a cywilizacją.",
                             Director = "Hayao Miyazaki",
+                            Poster = "mononoke.png",
                             Price = 34.99m,
                             Title = "Księżniczka Mononoke"
                         },
@@ -317,6 +340,7 @@ namespace WebApplication1.Migrations
                             CategoryId = 1,
                             Desc = "Oddział wyrusza na misję ratunkową podczas II wojny światowej.",
                             Director = "Steven Spielberg",
+                            Poster = "szeregowiec.png",
                             Price = 39.99m,
                             Title = "Szeregowiec Ryan"
                         });

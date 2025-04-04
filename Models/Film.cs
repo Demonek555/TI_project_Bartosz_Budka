@@ -11,6 +11,7 @@ namespace WebApplication1.Models
         [StringLength(600,ErrorMessage ="Przekroczono limit znaków")]
         public string Desc { get; set; }
         public decimal? Price { get; set; }
+        public string Poster { get; set; }
         public int CategoryId { get; set; }
         public Category Category { get; set; }
         
