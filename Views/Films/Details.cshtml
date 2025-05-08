@@ -15,7 +15,9 @@
                 <li><b>Reżyser:</b> @Model.Director</li>
                 <li><b>Cena:</b> @Model.Price</li>
                 <li><b>Opis:</b> @Model.Desc</li>
+                <li><a href="@Url.Action("AddToCart","Cart",new {filmId=Model.FilmId})">🛒</a></li>
             </ul>
+            
         </td>
         <td>
 
