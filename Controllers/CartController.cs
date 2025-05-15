@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WebApplication1.DAL;
 using WebApplication1.Infrastructure;
+using WebApplication1.Models;
 
 namespace WebApplication1.Controllers
 {
@@ -18,10 +19,24 @@ namespace WebApplication1.Controllers
             ViewBag.Total = CartManager.GetCartValue(HttpContext.Session);
             return View(cart);
         }
-        public IActionResult AddToCart(int filmId)
+        public IActionResult AddToCart(int filmId/*, string returnUrl = null*/)
         {
             CartManager.AddToCart(HttpContext.Session, filmId, db);
-            return RedirectToAction("Index","Cart");
+            //if (!string.IsNullOrEmpty(returnUrl))
+            //{
+            //    return Redirect(returnUrl);
+            //}
+            return RedirectToAction("Index");
+        }
+        public IActionResult RemoveFromCart(int id)
+        {
+            var model = new RemoveViewModel()
+            {
+                itemId = id,
+                itemQuantity = CartManager.RemoveFromCart(HttpContext.Session, id),
+                cartValue = CartManager.GetCartValue(HttpContext.Session)
+            };
+            return Json(model);
         }
         
     }

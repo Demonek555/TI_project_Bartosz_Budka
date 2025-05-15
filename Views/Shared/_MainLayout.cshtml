@@ -23,8 +23,6 @@
     </div>
 
     @(await Component.InvokeAsync("Menu"))
-
-    
     @RenderBody()
     <div class="mt-5 p-4 bg-dark text-white text-center">
         <a href="@Url.Action("footerSites", "Home", new { viewName = "Omnie" })">O mnie</a>
@@ -32,6 +30,6 @@
         <a href="@Url.Action("footerSites", "Home", new { viewName = "Regulamin" })">Regulamin</a>
         <a href="@Url.Action("footerSites", "Home", new { viewName = "Kontakt" })">Kontakt</a>
     </div>
-    
+    @RenderSection("Scripts",false)
 </body>
 </html>
